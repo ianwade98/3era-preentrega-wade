@@ -1,0 +1,15 @@
+
+@mixin shadowForm {
+    box-shadow: 0 0 5px 2px $color_1;
+    border: 1px solid $color_1;
+}
+
+@mixin titulos($color, $padding, $size) {
+    text-align: center;
+    font-family: $principalFont;
+    font-size: $size;
+    font-weight: $boldLg;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: $color;
+    padding: $padding;
+}

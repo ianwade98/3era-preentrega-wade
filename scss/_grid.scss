@@ -1,0 +1,58 @@
+/*======== CONTAINER GRID ========*/
+
+/*GRID CONTAINER LAYOUT*/
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "logo"
+    "header"
+    "main"
+    "pie";
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.header{
+    grid-area: header;
+}
+
+.mainIndx{
+    grid-area: main;
+}
+
+.pieIndx{
+    grid-area: pie;
+}
+
+/*GRID CONTAINER SECTION INDEX*/
+
+#containerSection{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "imagen texto1"
+    "texto2 texto2"
+    "texto2 texto2";
+}
+
+.imagenContainer{
+    grid-area: imagen;
+}
+
+.articleOne{
+    grid-area: texto1;
+    justify-self: start;
+}
+
+.articleTwo{
+    grid-area: texto2;
+    width: 100%;
+}

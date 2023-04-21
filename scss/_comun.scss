@@ -1,0 +1,118 @@
+
+//Reset
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $principalFont;
+}
+
+//General
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+	color: $black;
+	background-color: $white;
+	font-size: $textMd;
+}
+
+.logo {
+	text-align: center;
+	padding: 2rem;
+}
+
+.btnMio {
+	background-color: $white;
+	color: $black;
+	border: 2px solid $color_1;
+	font-size: $textSm;
+	font-weight: $boldMd;
+	&:hover {
+		background-color: $color_1;
+		border: 2px solid $color_1;
+		color: $color_2;
+		font-weight: $boldMd;
+	}
+}
+
+//Header
+
+.header{
+    //position
+    position: sticky;
+    top: 0;
+}
+
+//Nav
+
+.navbar{
+    justify-content: center;
+    background-color: $color_1;
+}
+
+nav{
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            padding: 2rem;
+            margin: 0 4rem;
+            &:hover{
+                .hoverNav{
+                    color: $color_2;
+                    font-weight: $boldSm;
+                }
+            }
+            a{
+                text-decoration: none;
+                font-size: $textMd;
+                color: $black;
+            }
+        }
+    }
+}
+
+.navbar-toggler{
+    border-color:$color_1;
+    background-color:$color_1;
+    color: $color_2;
+}
+
+//Footer
+
+#pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: $color_1;
+}
+
+.imgRedes{
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+}
+
+footer{
+    div{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+//Animación
+
+.scaleFooter{
+    &:hover{
+        transform: scale(1.3);
+        cursor: pointer;
+        transition: 2s;
+    }
+}

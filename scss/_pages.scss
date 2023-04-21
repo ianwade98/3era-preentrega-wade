@@ -1,0 +1,357 @@
+/*======== INICIA INDEX ========*/
+
+//Include mixins
+
+.mainH1 {
+    @include titulos($color_1, 3rem 0 0 0, $textXl)
+}
+
+.mainH2 {
+    text-align: center;
+    font-size: $textLg;
+    padding-bottom: 3rem;
+    font-weight: $boldLg;
+}
+
+.imagenContainer{
+    margin-right: 4rem;
+    padding: 1rem;
+}
+
+.imgSection {
+    height: 60rem;
+    width: 50rem;
+    box-shadow: 0px 10px 10px $color_1; 
+}
+
+.articleOne{
+    padding: 2rem;
+    margin-left: 4rem;
+    font-size: $textLg;
+    font-style: italic;
+    line-height: 4rem;
+}
+
+.articleTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: $textLg;
+    padding: 2rem;
+    background-color: $color_2;
+    margin: 2rem 0;
+}
+
+.imgIndxEscrito{
+    height: 30rem;
+    width: 30rem;
+}
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+.spanH2{
+    padding: 1rem 5rem;
+    background-color: $color_1;
+    color: $color_2;
+}
+
+.hiperV{
+    text-decoration: none;
+    color: $black;
+}
+
+//Animación y Pseudoclase
+
+a {
+	&:hover {
+		em {
+			color: $color_1;
+			font-weight: $boldLg;
+		}
+	}
+}
+
+article{
+    p.one{
+            &:first-letter{
+                font-size: $textXl;
+                font-weight: $boldXl;
+            }
+        }
+    
+}
+
+/*======== FIN INDEX ========*/
+
+/*======== INICIA LIBROS ========*/
+
+//Include mixins
+
+.mainH1Lib{
+    @include titulos($color_1, 3rem, $textXl)
+}
+
+.card{
+    position: static;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $color_1;
+    background-color: $white;
+}
+
+.card-title{
+    font-size: 2rem;
+    font-weight: $boldLg;
+    margin-bottom: 1rem;
+}
+
+.list-group{
+    border: 2px solid $color_1;
+}
+
+.list-group-item{
+    position: static;
+    border: 2px solid $color_1;
+    background-color: $white;
+}
+
+.cardList{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.cardLink{
+    text-decoration: none;
+    color: $black;
+    background-color: $color_1;
+    padding: 0.5rem 4rem;
+    color: $white;
+}
+
+.imgLibros{
+    height: 37rem;
+    width: 28rem;
+}
+
+.mainH2L{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: $boldLg;
+}
+
+.articleLibros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 2rem 4rem;
+}
+
+.listaCompra{
+    margin-top: 2rem;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+}
+
+.linkCompra{
+    text-align: justify;
+    padding: 0;
+}
+
+.card-body {
+	&:hover {
+		.cardLink {
+			color: $color_2;
+			font-weight: $boldLg;
+			padding: 0.5rem 6rem;
+		}
+	}
+}
+
+.linkCompra {
+	li {
+        margin: 1rem 0;
+		a {
+			color: $color_1;
+		}
+	}
+}
+
+/*======== FIN LIBROS ========*/
+
+/*======== INICIO ESCRITOS ========*/
+
+//Include mixins
+
+.mainH1Esc{
+    @include titulos($color_1, 3rem, $textXl)
+}
+
+.artEscritos{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    border-bottom: 2px solid $color_1;
+    border-right: 2px solid $color_1;
+}
+
+.imgEscritos
+{
+    height: 30rem;
+    width: 30rem;
+}
+
+.textEscritos{
+    padding-left: 2rem;
+    padding-right: 4rem;
+    text-align: justify;
+}
+
+.divImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+/*======== FIN ESCRITOS ========*/
+
+/*======== INICIA BIOGRAFIA ========*/
+
+//Include mixins
+
+.mainH1Bio{
+    @include titulos($color_1, 3rem 0 0 0, $textXl)
+}
+
+.imgBiografia{
+    height: 20rem;
+    width: 20rem;
+    float: left;
+    padding: 1rem;
+}
+
+.articleBio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: justify;
+}
+
+.mainH2V {
+    text-align: center;
+    font-size: $textLg;
+    padding: 2rem;
+    font-weight: $boldLg;
+}
+
+/*======== FIN BIOGRAFIA ========*/
+
+/*======== INICIA CONTACTO ========*/
+
+//Include mixins
+
+.contact{
+    @include titulos($color_2, 2rem, $textXl);
+    background-color: $color_1;
+}
+
+.sectionFlex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.sectionShadow{
+    box-shadow: inset 0 0 10px $black;
+    }
+
+    .imgContacto{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .paddingCont{
+        padding: 1rem;
+        height: 100%;
+    }
+
+    //Include mixins
+
+    #nombre {
+        &:focus {
+            @include shadowForm
+        }
+    }
+
+    #telefono {
+        &:focus {
+            @include shadowForm
+        }
+    }
+
+    #email {
+        &:focus {
+            @include shadowForm
+        }
+    }
+
+    #mensaje {
+        &:focus {
+            @include shadowForm
+        }
+    }
+
+/*======== FIN CONTACTO ========*/
+
+/*======== INICIA ERROR 404 ========*/
+
+.fondoError404{
+    background-image: url(../img/fondoerror.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.errorContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//Include mixins
+
+.h1Error{
+    @include titulos($color_1, 0, 5rem)
+}
+
+.h2Error{
+    @include titulos($color_1, 0, $textXl)
+}
+
+//Extend 
+
+.btnError{
+    @extend .btnMio;
+    width: 20rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}

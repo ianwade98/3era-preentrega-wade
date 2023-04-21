@@ -1,0 +1,205 @@
+
+/*======= MEDIA QUERIES =======*/
+
+/*Breakpoint LG 992*/
+
+@media screen and (max-width: 992px) {
+
+    #gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "logo header"
+        "main main"
+        "pie pie";
+    }
+
+    .logo{
+        grid-area: logo;
+        background-color: $color_1;
+        position:sticky;
+        top: 0;
+    }
+
+    .header{
+        grid-area: header;
+        background-color: $color_1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainIndx{
+        grid-area: main;
+        background-color: $white;
+    }
+
+    .pieIndx{
+        grid-area: pie;
+    }
+
+    .backColor{
+        background-color: $color_1;
+    }
+
+    .btnHamburguer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    color: $color_2;
+                }
+            }
+        }
+    }
+
+    #containerSection{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "imagen imagen"
+        "texto1 texto1"
+        "texto2 texto2";
+    }
+
+    .articleOne{
+        margin: 2rem 0;
+        justify-self: center;
+    }
+
+    .imgLogo{
+        height: 50px;
+        width: 182px;
+    }
+
+    .imagenContainer{
+        margin: 0;
+    }
+
+    .imgSection {
+        height: 50rem;
+        width: 40rem;
+    }
+
+    .articleTwo{
+        margin-bottom: 4rem;
+    }
+
+    .imgIndxEscrito{
+        height: 20rem;
+        width: 20rem;
+    }
+
+    form{
+        font-size: 1rem;
+    }
+
+    #pie{
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 907px){
+    .contact{
+        font-size: 2.5rem;
+        padding: 0.5rem;
+    }
+
+}
+
+/*Breakpoint MD 768*/
+
+@media screen and (max-width: 768px) {
+    nav{
+        ul{
+            li{
+                padding: 1rem 0;
+                margin: 0;
+            }
+        }
+    }
+
+    nav{
+        ul{
+            li{
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .imgSection {
+        height: 36rem;
+        width: 26rem;
+    }
+
+    .articleOne{
+        font-size: $textSm;
+        line-height: 2rem;
+        margin: 1rem;
+    }
+
+    .articleTwo{
+        font-size: $textSm;
+    }
+
+    .imgEscritos{
+        height: 25rem;
+        width: 25rem;
+    }
+
+}
+
+/*Reajustes pequeños en cosas que se rompen*/
+
+@media screen and (max-width: 490px) {
+
+    .imgError404{
+        width: 28rem;
+    }
+
+    .h1Error{
+        font-size: $textXl;
+    }
+
+    .h2Error{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 373px) {
+
+    .spanH2{
+        font-size: 1.2rem;
+    }
+
+    .articleLibros{
+        padding: 2rem 0;
+        }
+
+    .linkCompra li a{
+        font-size: 1.2rem;
+        }
+
+    .h1Error{
+        font-size: 3rem;
+    }
+
+    .h2Error{
+        font-size: $textLg;
+    }
+}
+
